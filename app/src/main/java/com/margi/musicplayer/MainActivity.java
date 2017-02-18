@@ -10,7 +10,7 @@ import android.widget.ToggleButton;
 public class MainActivity extends AppCompatActivity {
 
     ToggleButton toggleButton;
-    MediaPlayer mediaPlayer;
+    MediaPlayer mediaPlayer;//create a object of the mediaplayer
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         toggleButton =(ToggleButton)findViewById(R.id.main_toggle);
         ImageView imageView =(ImageView) findViewById(R.id.main_img);
         imageView.setImageResource(R.drawable.margi);
-        mediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.shreya);
+       mediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.shreya);
         toggleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
